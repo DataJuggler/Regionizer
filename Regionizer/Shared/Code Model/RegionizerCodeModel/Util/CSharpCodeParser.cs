@@ -1215,6 +1215,10 @@ namespace DataJuggler.Regionizer.CodeModel.Util
                         {
                             // increment lineNumber (LineNumber starts a 1 not 0)
                             lineNumber++;
+
+                            // attempting to fix a bug with CreatePrivateVariables and FormatDocument
+                            // where if a line has spadces at the end, it causes the parser to mess up
+                            line = line.TrimEnd();
                                 
                             // Create a text line
                             CM.TextLine textLine = new CM.TextLine(line, lineNumber);    

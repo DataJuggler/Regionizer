@@ -2893,7 +2893,7 @@ namespace DataJuggler.Regionizer
                 
                 // create a summary
                 string summary1Text = "/// <summary>";
-                string summary2Text = "/// This method " + description;
+                string summary2Text = "/// " + description;
                 string summary3Text = @"/// </summary>";
                 
                 // create the codeLine
