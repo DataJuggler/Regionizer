@@ -260,7 +260,7 @@ namespace DataJuggler.Regionizer.CodeModel.Util
                         case "init":
 
                             // Set the list
-                            description = " performs initializations for this object.";
+                            description = " This method performs initializations for this object.";
 
                             // required
                             break;
