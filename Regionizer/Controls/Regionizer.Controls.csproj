@@ -10,7 +10,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DataJuggler.Regionizer.Controls</RootNamespace>
     <AssemblyName>DataJuggler.Regionizer.Controls</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
@@ -46,9 +46,6 @@
     <ApplicationIcon>Tools.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DataJuggler.Core.UltimateHelper, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\DataJuggler.Core.UltimateHelper.1.3.0\lib\net461\DataJuggler.Core.UltimateHelper.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
@@ -64,9 +61,6 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="WindowsFormsIntegration" />
-    <Reference Include="XmlMirror.Runtime, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\XmlMirror.Runtime.2.2.0\lib\net461\XmlMirror.Runtime.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ButtonHostControl.xaml.cs">
@@ -100,7 +94,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -131,6 +124,14 @@
     <ProjectReference Include="..\..\DataJuggler.WPF.Controls\DataJuggler.WPF.Controls.csproj">
       <Project>{4fe1ffc2-d8af-4d07-9b2f-dc19126fc436}</Project>
       <Name>DataJuggler.WPF.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UltimateHelperEx\DataJuggler.Core.UltimateHelper.csproj">
+      <Project>{b570d96e-c163-480d-8c89-192ac7cef60a}</Project>
+      <Name>DataJuggler.Core.UltimateHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XmlMirror.RuntimeEx\XmlMirror.RunTime.csproj">
+      <Project>{fe1cd832-b681-4470-a791-aa5bb37fc09b}</Project>
+      <Name>XmlMirror.RunTime</Name>
     </ProjectReference>
     <ProjectReference Include="..\Shared\Code Model\RegionizerCodeModel\Regionizer.CodeModel.csproj">
       <Project>{95C10060-7266-48CC-B04F-EBCFDDA440EA}</Project>
@@ -175,9 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\YouTube.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="RAD Studio Icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
